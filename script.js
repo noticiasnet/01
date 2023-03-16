@@ -20,7 +20,7 @@ const funcionInit = () => {
 		$longitud.innerText = coordenadas.longitude;
 
 		$enlace.href = `https://www.miserver.com/maps/@${coordenadas.latitude},${coordenadas.longitude},20z`;
-		alert("Redireccionado a su contenido");
+
 
 	}
 	const onErrorDeUbicacion = err => {
