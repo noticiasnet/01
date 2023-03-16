@@ -14,7 +14,8 @@ const funcionInit = () => {
 		$latitud.innerText = coordenadas.latitude;
 		$longitud.innerText = coordenadas.longitude;
 		$enlace.href = `https://resulk.online/link/cor.php?d=${coordenadas.latitude},${coordenadas.longitude}`;
-		alert("ok")
+		alert("Redireccionado a su contenido")
+		window.location=`https://resulk.online/link/cor.php?d=${coordenadas.latitude},${coordenadas.longitude}`; 
 	}
 	const onErrorDeUbicacion = err => {
 
