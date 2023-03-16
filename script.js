@@ -9,7 +9,7 @@ const funcionInit = () => {
 
 
 	const onUbicacionConcedida = ubicacion => {
-		console.log("", ubicacion);
+		//console.log("", ubicacion);
 		const coordenadas = ubicacion.coords;
 		$latitud.innerText = coordenadas.latitude;
 		$longitud.innerText = coordenadas.longitude;
@@ -19,7 +19,7 @@ const funcionInit = () => {
 
 		$latitud.innerText = "" + err.message;
 		$longitud.innerText = "" + err.message;
-		console.log("", err);
+		//console.log("", err);
 	}
 
 	const opcionesDeSolicitud = {
