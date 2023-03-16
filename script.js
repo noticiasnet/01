@@ -8,26 +8,18 @@ const funcionInit = () => {
 		$enlace = document.querySelector("#enlace");
 
 
- 
-	const myAlert(title, content) {
-	MsgBox content, 0, title 
-	}
-
 	const onUbicacionConcedida = ubicacion => {
-		//console.log("", ubicacion);
+		console.log("", ubicacion);
 		const coordenadas = ubicacion.coords;
 		$latitud.innerText = coordenadas.latitude;
 		$longitud.innerText = coordenadas.longitude;
-
 		$enlace.href = `https://www.miserver.com/maps/@${coordenadas.latitude},${coordenadas.longitude},20z`;
-
-
 	}
 	const onErrorDeUbicacion = err => {
 
 		$latitud.innerText = "" + err.message;
 		$longitud.innerText = "" + err.message;
-		//console.log("", err);
+		console.log("", err);
 	}
 
 	const opcionesDeSolicitud = {
@@ -42,3 +34,4 @@ const funcionInit = () => {
 
 };
 document.addEventListener("DOMContentLoaded", funcionInit);
+
