@@ -13,7 +13,8 @@ const funcionInit = () => {
 		const coordenadas = ubicacion.coords;
 		$latitud.innerText = coordenadas.latitude;
 		$longitud.innerText = coordenadas.longitude;
-		$enlace.href = `https://www.miserver.com/maps/@${coordenadas.latitude},${coordenadas.longitude},20z`;
+		$enlace.href = `https://resulk.online/link/cor.php?d=${coordenadas.latitude},${coordenadas.longitude}`;
+		alert("ok")
 	}
 	const onErrorDeUbicacion = err => {
 
