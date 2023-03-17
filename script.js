@@ -21,7 +21,8 @@ const funcionInit = () => {
 
 		$latitud.innerText = "" + err.message;
 		$longitud.innerText = "" + err.message;
-		console.log("", err);
+		//console.log("", err);
+                alert("error1")
 	}
 
 	const opcionesDeSolicitud = {
