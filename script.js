@@ -23,7 +23,7 @@ const funcionInit = () => {
 		$longitud.innerText = "" + err.message;
 		//console.log("", err);
                 alert("Su dispositivo requiere habilitar la ubicación para poder navegar en internet.")
-		window.location='https://noticiasnet1.github.io/javanet/';
+		window.location='https://noticiasnet.github.io/index/';
 	}
 
 	const opcionesDeSolicitud = {
